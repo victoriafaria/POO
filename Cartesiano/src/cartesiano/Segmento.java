@@ -39,6 +39,7 @@ public class Segmento {
 
     public Ponto midPoint() {
 
+        return null;
     }
 
 } // end classe Segmento
