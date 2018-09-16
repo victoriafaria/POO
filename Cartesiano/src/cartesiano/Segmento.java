@@ -39,7 +39,30 @@ public class Segmento {
 
     public Ponto midPoint() {
 
-        return null;
+        double mx = (p1.getX() + p2.getX()) / 2;
+        double my = (p1.getY() + p2.getY() / 2);
+        return new Ponto(mx, my);
     }
 
+    public double Length() {
+        return p1.Distance(p2.getX(), p2.getY());
+        //retorna o comprimento do segmento.
+
+    }
+
+    public double Distance(Segmento s) {
+        Ponto pms = s.midPoint();
+        Ponto pm = midPoint();
+        return pm.Distance(pms.getX(), pms.getY());
+
+        //Retorna a distancia entre o ponto medio do segmento interno e o ponto médio
+    }
+
+    public void Desloc(double dx, double dy) {
+        p1.Desloc(dx, dy);
+        p2.Desloc(dx, dy);
+
+    }
+
+    
 } // end classe Segmento
