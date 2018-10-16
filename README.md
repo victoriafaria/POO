@@ -2,5 +2,5 @@
 
 #Exercícios de Programação Orientada a Objeto
 
-Simple Avarage 
-Official Bonus
+-Cartesiano
+-Official Bonus
