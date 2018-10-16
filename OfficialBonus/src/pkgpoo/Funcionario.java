@@ -1,19 +1,17 @@
-
 package pkgpoo;
-
 
 public abstract class Funcionario {
 
     private String vNome;
     private String vRG;
-    
-    public Funcionario (String vNome, String vRG) {
-             
+
+    public Funcionario(String vNome, String vRG) {
+
         this.vNome = vNome;
         this.vRG = vRG;
-    
+
     }
-    
+
     public String getvNome() {
         return vNome;
     }
@@ -29,13 +27,11 @@ public abstract class Funcionario {
     public void setvRG(String vRG) {
         this.vRG = vRG;
     }
-   
-    
-    public void relatorioMensal () {
-        System.out.println("Nome:" + vNome + "\n" +
-                "RG:" + vRG);
-        
-   
+
+    public void relatorioMensal() {
+        System.out.println("Nome:" + vNome + "\n"
+                + "RG:" + vRG);
+
     }
-    
+
 }

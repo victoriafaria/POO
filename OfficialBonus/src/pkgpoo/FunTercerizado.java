@@ -16,7 +16,6 @@ public class FunTercerizado extends Funcionario {
     } // end AcumularHora
 
     public void Zerar() {
-
         HoraTrabalhada = 0;
     }
 
@@ -27,5 +26,5 @@ public class FunTercerizado extends Funcionario {
                 + "Horas trabalhadas: " + HoraTrabalhada);
         Zerar();
     }
-    
-} //end FunTercerizado
+
+} //end FunTercerizado Extends Funcionario

@@ -40,7 +40,6 @@ public class FunTemporario extends FunProprio {
         super.relatorioMensal();
         System.out.println("Nota na avaliação mensal: " + NotaAvaliacao);
         Zerar();
-
     }
 
     @Override
@@ -52,4 +51,4 @@ public class FunTemporario extends FunProprio {
         return SalarioBonificado;
     }
 
-} // end class FunTemporario
+} // end class FunTemporario extends FunProprio
