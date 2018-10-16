@@ -3,7 +3,7 @@ package pkgpoo;
 
 
 public abstract class FunProprio extends Funcionario {
-    
+
     public FunProprio(String vNome, String vRG) {
         super(vNome, vRG);
     }

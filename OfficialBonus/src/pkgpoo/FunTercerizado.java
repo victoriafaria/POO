@@ -1,40 +1,31 @@
-
 package pkgpoo;
 
-
 public class FunTercerizado extends Funcionario {
-      
-    public FunTercerizado(String vNome, String vRG) {
+
+    protected int HoraTrabalhada;
+    protected String EmpresaOrigem;
+
+    public FunTercerizado(int HoraTrabalhada, String EmpresaOrigem, String vNome, String vRG) {
         super(vNome, vRG);
+        this.HoraTrabalhada = HoraTrabalhada;
+        this.EmpresaOrigem = EmpresaOrigem;
     }
-   
-     protected int iHoraTrabalhada;
-     protected String sEmpresaOrigem;
-     
-     
-    public void AcumularHora (int iHora) {
-        iHora += iHoraTrabalhada;    
+
+    public void AcumularHora(int Hora) {
+        Hora += HoraTrabalhada;
     } // end AcumularHora
-    
-    public void Zerar () {
-    
-        iHoraTrabalhada = 0;
+
+    public void Zerar() {
+
+        HoraTrabalhada = 0;
     }
-    
+
     @Override
     public void relatorioMensal() {
-        super.relatorioMensal(); 
-        System.out.println("Nome da empresa: " + sEmpresaOrigem + "\n"
-                + "Horas trabalhadas: " + iHoraTrabalhada);
+        super.relatorioMensal();
+        System.out.println("Nome da empresa: " + EmpresaOrigem + "\n"
+                + "Horas trabalhadas: " + HoraTrabalhada);
         Zerar();
     }
-
-    public FunTercerizado(int iHoraTrabalhada, String sEmpresaOrigem, String vNome, String vRG) {
-        super(vNome, vRG);
-        this.iHoraTrabalhada = iHoraTrabalhada;
-        this.sEmpresaOrigem = sEmpresaOrigem;
-    }
     
-    
-      
 } //end FunTercerizado
