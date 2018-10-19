@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package practicepoo;
 
-/**
- *
- * @author Invent Digital
- */
+
+
 public class People {
     
-}
+    protected String Name;
+    protected int RG;
+
+    public People(String Name, int RG) {
+        this.Name = Name;
+        this.RG = RG;
+    }
+    
+    
+    
+    
+    
+    
+ } // end class people
