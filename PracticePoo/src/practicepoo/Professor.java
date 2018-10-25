@@ -16,6 +16,8 @@ public class Professor extends People {
         this.ClassHour = ClassHour;
     }
 
+  
+
     public String getCourse() {
         return Course;
     }
@@ -27,7 +29,7 @@ public class Professor extends People {
     @Override
     public double CalcularSalario() {
         double SalarioMensal;
-        SalarioMensal = QttClass * ClassHour;
+        SalarioMensal = QttClass * ClassHour + 100*Kids;
         return SalarioMensal;
     }
 

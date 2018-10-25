@@ -53,11 +53,4 @@ public abstract class People {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
  } // end class people
