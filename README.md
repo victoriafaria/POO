@@ -2,8 +2,8 @@
 
 #Exercícios de Programação Orientada a Objeto
 
--Cartesiano
--Official Bonus
--Practice Java
--
+* Cartesiano
+* Official Bonus
+* Practice Java
+
 
